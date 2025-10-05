@@ -24,10 +24,7 @@ function App() {
 
   return (
     <div
-      className="sm:flex flex-col flex sm:h-screen h-screen items-center justify-center bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: `url(https://images.pexels.com/photos/7299506/pexels-photo-7299506.jpeg)`,
-      }}
+      className="sm:flex flex-col bg-[url('assets/background.jpg')] flex sm:h-screen h-screen items-center justify-center bg-cover bg-no-repeat"
     >
       <div className=" flex-col justify-center items-center sm:p-20 p-10 bg-white/20 backdrop-blur-lg rounded-2xl shadow-4xl">
         <h1 className="text-white sm:text-6xl text-xl sm:mb-2 hover:text-purple-300 hover:duration-300 ">CoinSwap</h1>
@@ -77,7 +74,7 @@ function App() {
               className="w-full bg-white/20 backdrop-opacity-10 text-white py-4 rounded-md mt-10 flex items-center justify-center hover:bg-black hover:duration-300 ease-in-out"
               type="submit"
               >
-                Convert
+                Convert {from.toUpperCase()} to {to.toUpperCase()}
               </button>
             </div>
           </form>
